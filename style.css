@@ -128,11 +128,15 @@ body{
     width: 100%;
     object-fit: cover;
 }
-.case{
+.case-img {
     height: 100%;
+}
+.case-img img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-}  
+    display: block;
+}
 
 .featured-news{
     width:100%;
@@ -142,7 +146,8 @@ body{
 }
 .newsletter{
     text-align: center;
-    padding: 14px 0;
+    padding: 20px 0;
+    font-weight: 700;
  
 }
 .newsletter-card span{
@@ -155,7 +160,7 @@ body{
 .newsletter-card{
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 550px;
     overflow: hidden;
 }
 .card-bg{
@@ -507,4 +512,116 @@ body{
     width: 0%;
     height: 100%;
     background: white;
+}
+
+.help-section {
+    width: 100%;
+
+    padding: 75px 0 80px;
+
+    background: #061f2e;
+}
+
+
+
+
+.help-heading {
+    text-align: center;
+
+    margin-bottom: 48px;
+}
+
+
+.help-heading > span {
+    display: block;
+
+    margin-bottom: 45px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: white;
+}
+
+
+.help-heading h2 {
+    margin: 0;
+
+    font-size: 47px;
+    font-weight: 300;
+
+    line-height: 1.25;
+
+    color: white;
+}
+
+
+.help-grid {
+    width: 64%;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.help-card {
+    color: white;
+    text-decoration: none;
+
+    display: block;
+}
+
+
+.help-image {
+    width: 100%;
+    height: 220px;
+
+    overflow: hidden;
+}
+
+
+.help-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.help-card:hover .help-image img {
+    transform: scale(1.05);
+}
+
+.help-content {
+    padding-top: 22px;
+}
+
+
+.help-content h3 {
+    margin: 0 0 17px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.help-content p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #e1e6ea;
 }
