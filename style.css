@@ -76,8 +76,29 @@ body{
 .content-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"article survey case" "podcast webinar case";
     gap:14px;
     height: 570px;
+}
+.article-card {
+    grid-area: article;
+}
+
+.survey-card {
+    grid-area: survey;
+}
+
+.case-card {
+    grid-area: case;
+}
+
+.podcast-card {
+    grid-area: podcast;
+}
+
+.webinar-card {
+    grid-area: webinar;
 }
 .card{
     position: relative;
@@ -107,3 +128,127 @@ body{
     width: 100%;
     object-fit: cover;
 }
+.case{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}  
+
+.featured-news{
+    width:100%;
+    max-width: 1240px;
+    /* background-color: #060606; */
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.newsletter{
+    text-align: center;
+    padding: 14px 0;
+ 
+}
+.newsletter-card span{
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #d1d8e0;
+    text-transform: uppercase;
+}
+.newsletter-card{
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+.card-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.news-card-overlay{
+    position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg, 
+    rgba(2, 8, 18, 0.96) 0%, 
+    rgba(2, 8, 18, 0.90) 42%, 
+    rgba(2, 8, 18, 0.30) 70%, 
+    rgba(2, 8, 18, 0.05) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+}
+.news-card-content{
+    max-width: 480px;
+    z-index: 2;
+}
+  
+  .title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+  }
+  
+  .title .arrow {
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 2px;
+  }
+  
+  .description {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #c0ccda;
+    margin-bottom: 24px;
+  }
+  
+  .description em {
+    font-style: normal;
+    color: #ffffff;
+  }
+
+
+
+
+
+.subscribe-form {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .subscribe-form input::placeholder {
+    color: #888888;
+  }
+  
+  .subscribe-form button {
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #0b192c;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
