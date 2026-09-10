@@ -66,3 +66,44 @@ body{
     line-height: 1;
     margin-bottom: 20px;
 }
+.hero-content p{
+    width: 570px;
+    color: #c2c7ca;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap:14px;
+    height: 570px;
+}
+.card{
+    position: relative;
+    overflow: hidden;
+}
+.card-content{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent,rgba(10,25,35,0.9));
+}
+.card-content small{
+    font-size: 14px;
+    color:#ddd;
+    display: block;
+    margin-bottom: 15px;
+}
+.card-content h2{
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+}
+.hero-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
