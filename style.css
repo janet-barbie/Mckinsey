@@ -30,3 +30,15 @@ body{
 .logo span{
     margin-left: 25px;
 }
+.nav-links{
+    display: flex;
+    gap:30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #b8c0c7;
+    font-size: 15px;
+}
+.nav-links a:hover{
+    color: white;
+}
