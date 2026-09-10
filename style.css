@@ -42,3 +42,27 @@ body{
 .nav-links a:hover{
     color: white;
 }
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    color:#c5c5c5
+}
+
+.container {
+    width: 80%;
+    margin:50px auto;
+}
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:700px;
+    margin-bottom: 50px;
+}
+.hero-content h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
